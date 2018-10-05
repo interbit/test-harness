@@ -1,5 +1,5 @@
 {
-  "name": "test-harness",
+  "name": "interbit-test-harness",
   "version": "0.0.1",
   "description": "Interbit test harness package",
   "main": "src",

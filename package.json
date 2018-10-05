@@ -1,0 +1,27 @@
+{
+  "name": "test-harness",
+  "version": "0.0.1",
+  "description": "Interbit test harness package",
+  "main": "src",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interbit/test-harness.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/interbit/test-harness/issues"
+  },
+  "dependencies": {
+    "node-object-hash": "^1.4.1",
+    "redux-saga": "^0.16.0",
+    "seamless-immutable": "^7.1.4"
+  },
+  "homepage": "https://github.com/interbit/test-harness#readme"
+}

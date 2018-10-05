@@ -101,7 +101,7 @@ const reducer = (state = initialState, action) => {
       }
       return redispatch(state, [actions.sagaCheckInAlphabet(value)])
     }
-    case types.CHECK_IN_ALPHABET_RESPONSE: {
+    case types.CHECK_IN_ALPHABET_SAGA_RESPONSE: {
       const { isInAlphabet } = action.payload
       return redispatch(state, [actions.checkInAlphabetResponse(isInAlphabet)])
     }

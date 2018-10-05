@@ -6,9 +6,15 @@
   "directories": {
     "doc": "docs"
   },
-  "files": ["src/sagaRunner", "src/common/deferred"],
+  "files": [
+    "src/sagaRunner",
+    "src/common/deferred"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=10.9"
   },
   "repository": {
     "type": "git",

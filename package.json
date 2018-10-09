@@ -1,15 +1,11 @@
 {
   "name": "interbit-test-harness",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Interbit test harness package",
   "main": "src/index.js",
   "directories": {
     "doc": "docs"
   },
-  "files": [
-    "src/sagaRunner",
-    "src/common/deferred"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

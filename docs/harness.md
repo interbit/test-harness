@@ -194,9 +194,9 @@ requests, it is often more effective to test that desired effects were
 achieved rather than testing that each step operates correctly.
 
 If you do choose to use a unit testing strategy to test sagas, see
-[Testing Redux
-Sagas](https://hackernoon.com/testing-redux-sagas-c64dbba05935) which
-describes an approach for thoroughly exercising a saga's generator
+[Conceptualizing Units Tests with Redux
+Sagas](https://medium.com/@johnpipkin_79120/conceptualizing-unit-tests-with-redux-sagas-71c49fd8b08f)
+which describes an approach for thoroughly exercising a saga's generator
 steps. Note that unit testing can make your tests quite brittle; any
 small change in the sequence of a saga's operations requires
 complementary changes within the tests.

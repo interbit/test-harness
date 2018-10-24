@@ -180,3 +180,35 @@ Returns the current state being managed by the harness.
 
 Returns the list of blocks that have accumulated by running the harness
 so far.
+
+
+## Testing sagas
+
+We recommend using
+[`redux-saga-test-plan`](https://github.com/jfairbank/redux-saga-test-plan)
+to test sagas; it makes testing sagas (relatively) easy.
+
+Testing sagas requires a slightly different approach than unit testing.
+Since a saga may comprise logic that span multiple asynchronous
+requests, it is often more effective to test that desired effects were
+achieved rather than testing that each step operates correctly.
+
+If you do choose to use a unit testing strategy to test sagas, see
+[Testing Redux
+Sagas](https://hackernoon.com/testing-redux-sagas-c64dbba05935) which
+describes an approach for thouroughly exercising a saga's generator
+steps. Note that unit testing can make your tests quite brittle; any
+small change in the sequence of a saga's operations requires
+complementary changes within the tests.
+
+
+### Examples of saga testing
+
+The [Interbit SDK](https://docs.interbit.io/) uses sagas extensively,
+and includes a number of concrete saga tests that may provide
+inspiration for testing any saga you might implement with this test
+harness:
+
+* [The GitHub KYC covenant tests](https://github.com/interbit/interbit/blob/master/packages/app-account/src/tests/covenants/github-kyc.covenant.test.js)
+
+* [The Interbit UI Tools' middleware tests](https://github.com/interbit/interbit/blob/master/packages/interbit-ui-tools/src/tests/middleware/sagas.test.js)
